@@ -1,0 +1,366 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --blue-background: #3330E4;
+  --white-abackground: #ffffff;
+  --site-color-01: #000000;
+  --site-color-01-hover: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../img/Logo\ maker\ project\ bw.png);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 100px;
+  color: #050402;
+  font-family: 'Pramukh Rounded', sans-serif;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header-main {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffff99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.header-main-logo {
+  width: fit-content;
+  height: 100%;
+  padding-left: 60px;
+  display: flex;
+  align-items: center;
+  /*background-color: yellowgreen;*/
+
+
+}
+
+.header-main-logo-img {
+  width: 80px;
+  height: 80px;
+  background-image: url(../img/fentanyl_kills-removebg-no\ bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background-image 3s ease-in-out;
+
+}
+
+.header-main-logo-img:hover {
+  background-image: url(../img/Logo\ maker\ project\ bw.png);
+
+
+
+}
+
+.header-main-nav {
+  width: fit-content;
+  height: 100%;
+  padding: 30px 60;
+  /*background-color: yellow;*/
+
+
+
+}
+
+.header-main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45%;
+}
+
+.header-main-nav ul li a {
+  padding-right: 55px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  font-size: 30px;
+  line-height: 60px;
+  color: var(--site-color-01);
+  display: block;
+  height: 100%;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.header-main-nav ul li a:hover {
+  color: #7b7c7d;
+
+}
+
+
+#theme-button {
+  cursor: pointer;
+  line-height: 800px;
+  padding: 0 30px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  font-size: 25px;
+
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode .header-main {
+  background-color: #26264c;
+}
+
+.dark-mode section {
+  /*background-image: url(../img/pexels-brett-jordan-2746823.jpg);*/
+
+}
+
+.dark-mode h1 {
+  color: #ffffff;
+}
+
+
+.dark-mode .header-main-nav ul li a {
+  color: #e5e5e5
+}
+
+.dark-mode .header-main-nav ul li a:hover {
+  color: #000000;
+}
+
+.dark-mode main {
+  background-color: black;
+}
+
+.dark-mode .main-about-img img {
+  width: 500px;
+  height: 600px;
+  border-radius: 100px;
+  filter: grayscale(100%);
+  transition: ease-in-out 0.5s;
+
+}
+
+.dark-mode .main-about-img img:hover {
+  filter: none;
+  transition: ease-in-out 0.5s;
+
+}
+
+.dark-mode .main-about-text h2 {
+  color: white;
+}
+
+.dark-mode .main-about-text p {
+  color: white;
+}
+
+.dark-mode .main-about-text a {
+  box-shadow: inset 5em 1em #26264c;
+  color: white;
+
+}
+
+.dark-mode .main-about-video {
+  background-color: #333333;
+
+}
+
+.dark-mode .main-about-video h2 {
+  color: white;
+}
+
+.dark-mode .main-about-video p {
+  color: white;
+}
+
+.dark-mode .main-about-impact {
+  background-color: black;
+
+}
+
+.dark-mode .main-about-impact-img img {
+  width: 1000px;
+  height: 300px;
+  border-radius: 100px;
+  filter: grayscale(100%);
+  transition: ease-in-out 0.5s;
+
+}
+
+.dark-mode .main-about-impact-img img:hover {
+  filter: none;
+  transition: ease-in-out 0.5s;
+
+}
+
+.dark-mode .main-about-impact h2 {
+  color: white;
+}
+
+.dark-mode .main-about-impact p {
+  color: white;
+}
+
+.dark-mode .main-about-impact a {
+  box-shadow: inset 5em 1em #26264c;
+  color: white;
+
+}
+
+.dark-mode .main-about-impact a:hover {
+  color: #000000;
+
+}
+
+.dark-mode .petition {
+  background-color: #333333;
+}
+
+.dark-mode .petition h2 {
+  color: white;
+}
+
+.dark-mode .petition p {
+  color: white;
+}
+
+.dark-mode #myform {
+  color: white;
+}
+
+.dark-mode section .bg-video {
+  filter: grayscale(80%);
+}
+
+
+.dark-mode section .hero-sec h2 {
+  color: #000000;
+}
+
+.dark-mode section .hero-sec a {
+
+  color: #000000;
+  border: 2px solid #000000;
+}
+
+.dark-mode section .hero-sec a:hover {
+
+  color: #ffffff;
+}
+
+
+.dark-mode .footer {
+  background-color: #25254b;
+}
+
+.dark-mode .footer h2 {
+  color: white;
+}
+
+.dark-mode .footer a {
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.dark-mode .footer a:hover {
+  color: #999999;
+  text-decoration: underline #db442f;
+
+}
+
+/* the modal that covers the background and prevents user interactions */
+.modal {
+  display: none;
+  /* hides the modal from view by default*/
+  position: fixed;
+  /* keeps the modal in one place */
+  z-index: 2;
+  /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* 40% opacity black - other elements can still be seen */
+  flex-direction: column;
+  /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: #ffffa6;
+  /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex;
+  /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-text-container {
+  display: flex;
+  /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#modal-text-container p {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.dark-mode .modal-content {
+  background-color: #26264a;
+}
+
+.dark-mode #modal-text-container p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.dark-mode .modal-content img {
+  filter: grayscale(100%);
+}

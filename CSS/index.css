@@ -1,0 +1,65 @@
+section {
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+section .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -5%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  filter: grayscale(0%);
+}
+
+section .hero-sec h1 {
+  font-size: 200px;
+  text-align: center;
+  margin-bottom: 200px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+section .hero-sec h2 {
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 325px;
+  font-family: 'Poppins', sans-serif;
+}
+
+section .hero-sec a {
+
+  color: #ffffff;
+  display: block;
+  /*background-color: var(--white-abackground);*/
+  font-size: 15px;
+  padding: 10px 20px;
+  width: fit-content;
+  line-height: 1vh;
+  margin: -100px auto 20px;
+  margin-bottom: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+section .hero-sec a:hover {
+
+  color: #000000;
+}

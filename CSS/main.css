@@ -1,0 +1,254 @@
+main {
+  width: 100%;
+  padding-top: 100px;
+  background-color: #f3f3f3;
+
+}
+
+.main-about {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+  position: relative;
+}
+
+.main-about-img img {
+  width: 500px;
+  height: 600px;
+  border-radius: 100px;
+  filter: none;
+  transition: ease-in-out 0.5s;
+}
+
+.main-about-img img:hover {
+  /*border-radius: 0px;*/
+
+  filter: grayscale(100%);
+  transition: ease-in-out 0.5s;
+
+}
+
+.main-about-text {
+  flex-basis: 500px;
+}
+
+.main-about-text h2 {
+  font-size: 100px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  color: black;
+  font-weight: 700px;
+}
+
+.main-about-text p {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 35px;
+  color: black;
+  text-align: justify;
+
+}
+
+.main-about-text a {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  padding: 5px 5px;
+  box-shadow: inset 5em 1em #3130db;
+
+}
+
+.main-about-text a:hover {
+  color: #000000;
+  /*box-shadow: inset 5em 1em gold;*/
+}
+
+.main-about-video {
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 50px;
+
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+
+}
+
+.wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #333333;
+  border: none;
+
+}
+
+.main-about-video p {
+  text-align: center;
+  color: black;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-about-impact {
+  background-color: #ffffff;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 60px;
+  position: relative;
+  text-align: center;
+
+
+}
+
+.main-about-impact-img img {
+  width: 1000px;
+  height: 300px;
+  border-radius: 100px;
+  filter: none;
+  transition: ease-in-out 0.5s;
+
+}
+
+.main-about-impact-img img:hover {
+  filter: grayscale(100%);
+  transition: ease-in-out 0.5s;
+
+}
+
+.main-about-impact-text {
+  flex-basis: 500px;
+  margin-bottom: 50px;
+}
+
+.main-about-impact-text h2 {
+  font-size: 100px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  color: black;
+  font-weight: 700px;
+
+}
+
+.main-about-impact-text p {
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 35px;
+  color: black;
+
+}
+
+.main-about-impact a {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  padding: 5px 5px;
+  box-shadow: inset 5em 1em #3130db;
+
+}
+
+.main-about-impact a:hover {
+  color: #000000;
+
+
+}
+
+.petition {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 170px;
+  align-items: center;
+  background-color: #f3f3f3;
+}
+
+.petition p {
+  text-align: left;
+  color: black;
+  font-size: 25px;
+  line-height: 35px;
+  font-family: 'Poppins', sans-serif;
+
+
+
+}
+
+.petition h2 {
+  font-size: 100px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  color: black;
+  font-weight: 700px;
+}
+
+
+.petition input,
+label {
+  /*display: flex;
+  flex-direction: column;*/
+  margin: 0.4rem 0;
+}
+
+.petition-acs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-basis: 500px;
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #feff99;
+}
+
+.footer h2 {
+  font-size: 50px;
+  font-family: 'Pramukh Rounded', sans-serif;
+  color: black;
+}
+
+.footer a {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #999999;
+  text-decoration: underline #302fdb;
+
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
